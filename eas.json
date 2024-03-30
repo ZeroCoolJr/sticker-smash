@@ -15,7 +15,7 @@
   "submit": {
     "production": {
       "android": {
-        "serviceAccountKeyPath": "./sticker-smash.json",
+        "serviceAccountKeyPath": "./service_account.json",
         "track": "internal",
         "releaseStatus": "draft"
       }

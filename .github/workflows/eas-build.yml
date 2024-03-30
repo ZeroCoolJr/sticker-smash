@@ -23,6 +23,10 @@ jobs:
           node-version: 18.x
           cache: npm
 
+      - name: Create service account for Google Play
+        run: |
+          echo '${{secrets.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON}}' > service_account.json
+
       - name: Setup Expo and EAS
         uses: expo/expo-github-action@v8
         with:
@@ -34,3 +38,7 @@ jobs:
 
       - name: Build on EAS and publish to stores
         run: eas build --platform android --non-interactive --no-wait --auto-submit
+
+      - name: Clean up
+        if: ${{ always() }}
+        run: rm service_account.json
