@@ -1,19 +1,17 @@
 {
   "expo": {
-    "name": "app",
-    "slug": "app",
-    "version": "1.0.0",
+    "name": "Sticker Smash",
+    "slug": "sticker-smash",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#25292e"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -21,10 +19,20 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.zerocooljr.stickersmash",
+      "versionCode": 10010003,
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zerocooljr.stickersmash"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "sdkVersion": "50.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "463965c3-8b45-4545-a7c9-305df71fd159"
+      }
     }
-  }
+  },
+  "name": "app"
 }
