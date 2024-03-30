@@ -17,6 +17,4 @@ This repository is my own take following Expo's [introductory tutorial](https://
 - Changed "handleXXX" methods with no "on" prefix, e.g. `addSticker` rather than `onAddSticker`.
 - Installed `@types/dom-to-image` dev npm package.
 
-## Footnotes
-
 [^1]: Expo asked me to set the `ANDROID_HOME` environment variable to where the `android/sdk` is installed.
